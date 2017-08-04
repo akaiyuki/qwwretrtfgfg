@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dev.av.com.ridehailingappand.fragment.MainFragment"
+    android:background="@color/darker_blue">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar"/>
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/map"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:id="@+id/map"-->
+        <!--android:layout_below="@+id/app_bar"/>-->
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+
+
+
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:src="@drawable/timer"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginTop="250dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_above="@+id/btnRequest"-->
+        <!--android:layout_marginBottom="20dp"/>-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:layout_above="@+id/btnRequest"
+        android:padding="10dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:id="@+id/txtTimer"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="From: Madrigal Business Park"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:id="@+id/txtLocation"/>-->
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLocation"
+            android:hint="Enter Location"
+            android:layout_marginLeft="20dp"/>
+
+
+        <!--<View-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:background="@color/colorHintText"-->
+            <!--android:layout_marginTop="45dp"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:id="@+id/divider"/>-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="To: Ayala, Makati City"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:layout_below="@+id/divider"-->
+            <!--android:id="@+id/txtDestination"/>-->
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDestination"
+            android:hint="Enter Destination"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/txtLocation"/>
+
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp"
+        android:background="@color/colorButtonBackground"
+        android:textColor="@color/colorWhiteText"
+        android:id="@+id/btnRequest"/>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your Destination"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="35dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From:  Madrigal Business Park, Ayala Alabang, Muntinlupa City"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorHintText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Destination"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:background="@color/colorButtonBackground"
+        android:textColor="@color/colorWhiteText"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
